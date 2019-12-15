@@ -22,3 +22,7 @@ func find(slice []int, val int)(bool){
 func isNum(s string)(bool){
 	return regexp.MustCompile("^[0-9]+$").MatchString(s)
 }
+
+func isUpper(s rune)bool{
+	return regexp.MustCompile("[A-Z]").MatchString(string(s))
+}
